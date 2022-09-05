@@ -57,12 +57,28 @@
 //   //   console.log(seconds++);
 // }, 500);
 
-let seconds = 0;
+// let seconds = 0;
 
-const setIntervalId = setInterval(() => {
-  console.log(++seconds);
-  if (seconds === 10) {
-    clearInterval(setIntervalId);
+// const setIntervalId = setInterval(() => {
+//   console.log(++seconds);
+//   if (seconds === 10) {
+//     clearInterval(setIntervalId);
+//   }
+//   //   console.log(seconds++);
+// }, 500);
+
+// let seconds = 0;
+
+// const setTimeoutId = setTimeOut(() => {
+//   console.log(++seconds);
+//   if (seconds === 10) {
+//     clearTimeout(setTimeoutId);
+//   }
+// }, 500);
+
+const setTimeOutId = setTimeout(() => {
+  console.log("first");
+  if (setTimeOutId === 5) {
+    clearTimeout(setTimeOutId);
   }
-  //   console.log(seconds++);
-}, 500);
+}, 10000);
